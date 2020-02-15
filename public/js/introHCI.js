@@ -10,13 +10,13 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Page ready");
- 	// initCamera();
- 	// initMap();
+  initCamera();
+ 	initMap();
  	initGestures();
  	initRSVPForm();
 }
 
-// init jQuery gestures  
+// init jQuery gestures
 function initGestures() {
 	// add gestures listener here
 }
