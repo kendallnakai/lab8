@@ -16,6 +16,16 @@
   <script src="/js/introHCI.js"></script>
   <script src="/js/camera.js"></script>
 
+  <!-- mapquest import -->
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
+  <!-- mapquest core -->
+  <script src="your version of Leaflet.js"></script>
+  <link type="text/css" rel="stylesheet" href="your version of Leaflet.css"/>
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest-core.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest-core.css"/>
+
   <!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -38,7 +48,7 @@
     <div id="mapQuest" class="profile">
       <h3>Event Location</h3>
       <div id="map" style="max-height: 400px;"></div>
-    </div> 
+    </div>
 
     <hr>
 
@@ -74,14 +84,14 @@
     <hr>
 
     <div id="rsvp">
-      
+
       <div class="row">
         <div class="col">
           <label for="">Your Photo</label>
         </div>
       </div>
       <div class="row">
-       <!--  <div class="col-6">
+      <div class="col-6">
           <div id="camera" class="profile" style="max-width: 250px;">
             <video autoplay id="camera-video"></video>
             <button id="camera-button" class="btn btn-primary">Take Photo</button>
@@ -113,8 +123,30 @@
         </div>
       </div>
       <br>
-      
+
+      <div class="col-8">
+
+			<div class="row">
+				<label for="">Your Photo</label>
+
+				 <div class="col">
+					<div id="camera" class="profile" style="max-width: 250px;">
+						<video autoplay id="camera-video"></video>
+						<button id="camera-button" class="btn btn-primary">Take Photo</button>
+					</div>
+				</div>
+
+				<div class="col">
+					<canvas id="camera-canvas"></canvas>
+				</div>
+			</sdiv>
+		</div>
+
     </div>
   </div>
+
+  <link href="/css/introHCI.css" rel="stylesheet">
+	<script src="/js/googlemaps.js"></script>
+	{{> mapQuest}}
 </body>
 </html>
